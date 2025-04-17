@@ -1,5 +1,4 @@
 import type React from "react";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
@@ -8,10 +7,47 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "AI Toolbox",
-  description: "Supercharge Your Ideas with AI",
-  generator: "v0.dev",
+export const metadata = {
+  title: {
+    default: "AI Toolbox",
+    template: "%s | AI Toolbox",
+  },
+  description:
+    "AI Toolbox — a collection of intelligent AI-powered tools built for productivity and creativity.",
+  keywords: ["AI Toolbox", "AI tools", "productivity tools", "Next.js AI"],
+  authors: [
+    { name: "Ananiya Fekede", url: "https://edekefayinana.vercel.app" },
+  ],
+  creator: "Ananiya",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "AI Toolbox",
+    description: "Discover a smart collection of AI-powered tools.",
+    url: "https://toolboxai.vercel.app/",
+    siteName: "AI Toolbox",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AI Toolbox",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Toolbox",
+    description: "Discover a smart collection of AI-powered tools.",
+    creator: "@yourTwitterHandle",
+    images: ["/og-image.png"],
+  },
+  metadataBase: new URL("https://toolboxai.vercel.app/"),
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

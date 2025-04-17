@@ -1,40 +1,7 @@
 "use client";
 
 import ToolCard from "@/components/tool-card";
-import {
-  FileTextIcon,
-  RefreshCwIcon,
-  MessageSquareIcon,
-  LightbulbIcon,
-} from "@/components/icons";
-
-const tools = [
-  {
-    id: "summarize",
-    title: "Summarize Text",
-    description: "Condense long articles or documents into concise summaries.",
-    icon: FileTextIcon,
-  },
-  {
-    id: "rephrase",
-    title: "Rephrase Text",
-    description:
-      "Rewrite content in different styles while preserving meaning.",
-    icon: RefreshCwIcon,
-  },
-  {
-    id: "chat",
-    title: "Chat Assistant",
-    description: "Have a conversation with an AI assistant to get answers.",
-    icon: MessageSquareIcon,
-  },
-  {
-    id: "ideas",
-    title: "Idea Generator",
-    description: "Generate creative ideas for projects, content, and more.",
-    icon: LightbulbIcon,
-  },
-];
+import { tools } from "@/data/tools";
 
 export default function Toolbox() {
   return (
