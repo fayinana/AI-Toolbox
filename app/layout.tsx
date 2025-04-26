@@ -57,6 +57,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+        <script
+          src="https://cdn.jsdelivr.net/gh/fayinana/awesome-badge@1.0.4/ananiya-badge.js"
+          type="module"
+          async
+        />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="flex flex-col min-h-screen">

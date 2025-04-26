@@ -112,3 +112,6 @@ For major changes, please open an **issue first** to discuss.
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
+
+<!--
+![PageSpeed](https://img.shields.io/badge/PageSpeed-100%25-green?logo=google&logoColor=blue) -->
